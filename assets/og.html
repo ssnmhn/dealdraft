@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{width:1200px;height:630px;background:#16283C;overflow:hidden;position:relative;
+       font-family:'Source Serif 4',Georgia,serif}
+  .frame{position:absolute;inset:26px;border:1px solid rgba(199,154,85,.5)}
+  .frame2{position:absolute;inset:32px;border:1px solid rgba(199,154,85,.22)}
+  .left{position:absolute;left:84px;top:0;bottom:0;width:520px;display:flex;flex-direction:column;
+        justify-content:center}
+  .kicker{font-size:17px;letter-spacing:.24em;text-transform:uppercase;color:#C79A55;margin-bottom:26px}
+  .wordmark{font-family:'Fraunces',Georgia,serif;font-weight:700;font-size:76px;color:#F5EFDF;line-height:1}
+  .wordmark span{color:#C79A55}
+  .line{font-family:'Fraunces',serif;font-weight:500;font-size:33px;color:#EDE6D6;line-height:1.3;
+        margin-top:26px}
+  .line em{font-style:italic;color:#C79A55}
+  .subline{font-size:20px;color:#9BA8B8;margin-top:24px;font-style:italic}
+  .seal{width:74px;height:4px;background:#B07C2E;margin-top:30px}
+  .stack{position:absolute;right:-40px;top:50%;transform:translateY(-50%);width:560px;height:630px}
+  .stack .pg{position:absolute;border-radius:2px;overflow:hidden;
+             box-shadow:0 18px 48px rgba(0,0,0,.5), 0 4px 12px rgba(0,0,0,.35)}
+  .stack img{display:block;width:100%;height:auto}
+  .p1{width:295px;left:190px;top:48px;transform:rotate(2.5deg);z-index:3}
+  .p2{width:295px;left:16px;top:96px;transform:rotate(-5deg);z-index:2}
+  .p3{width:295px;left:120px;top:186px;transform:rotate(6.5deg);z-index:1;opacity:.95}
+</style>
+</head>
+<body>
+  <div class="frame"></div><div class="frame2"></div>
+  <div class="left">
+    <div class="kicker">White-label CIMs for business brokers</div>
+    <div class="wordmark">Deal<span>Draft</span></div>
+    <div class="line">The CIM, handled. <em>72 hours,</em> your brand, pay only if you use it.</div>
+    <div class="seal"></div>
+    <div class="subline">Read the 26-page sample before you send a stranger anything.</div>
+  </div>
+  <div class="stack">
+    <div class="pg p1"><img src="page-cover.jpg" alt=""></div>
+    <div class="pg p2"><img src="page-pnl.jpg" alt=""></div>
+    <div class="pg p3"><img src="page-chart.jpg" alt=""></div>
+  </div>
+</body>
+</html>

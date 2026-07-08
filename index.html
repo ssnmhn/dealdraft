@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealDraft — White-label CIMs for business brokers, in 72 hours</title>
+<meta name="description" content="Send your recast financials and seller questionnaire; get a 20–30 page buyer-grade CIM under your brand in 72 hours — plus blind teaser and listing copy. Pay only if you use it. $500 founding price.">
+<link rel="canonical" href="https://ssnmhn.github.io/dealdraft/">
+<meta property="og:title" content="DealDraft — the CIM, handled. 72 hours, your brand.">
+<meta property="og:description" content="White-label CIM drafting for business brokers. 20–30 pages from your recast numbers, cited industry research, blind teaser, listing copy. Pay only if you use it.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ssnmhn.github.io/dealdraft/">
+<meta property="og:image" content="https://ssnmhn.github.io/dealdraft/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%231E3A5F'/><text x='50' y='68' font-size='52' text-anchor='middle' font-family='Georgia' fill='%23F5EFDF'>D</text><rect x='24' y='76' width='52' height='5' fill='%23B07C2E'/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F4EE; --card:#FDFCF8; --ink:#232B33; --navy:#1E3A5F; --navy-deep:#16283C;
+    --brass:#B07C2E; --brass-soft:#C79A55; --muted:#6E6A5C; --rule:#DDD6C4; --panel:#EFEADC;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Source Serif 4',Georgia,serif;
+       font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.disp{font-family:'Fraunces',Georgia,serif;color:var(--navy);line-height:1.15}
+  a{color:var(--navy)}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  .kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--brass);font-weight:600;
+          font-family:'Source Serif 4',serif}
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(247,244,238,.92);backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--rule)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .wordmark{font-family:'Fraunces',serif;font-weight:700;font-size:21px;color:var(--navy);text-decoration:none;
+            letter-spacing:.01em}
+  .wordmark span{color:var(--brass)}
+  nav .links{display:flex;gap:26px;align-items:center;font-size:15px}
+  nav .links a{text-decoration:none;color:var(--ink)}
+  nav .links a:hover{color:var(--brass)}
+  .btn{display:inline-block;background:var(--navy);color:#F5EFDF;text-decoration:none;padding:12px 24px;
+       font-family:'Fraunces',serif;font-weight:600;font-size:16px;border:none;cursor:pointer;
+       transition:transform .15s ease, box-shadow .15s ease, background .15s ease}
+  .btn:hover{background:var(--navy-deep);transform:translateY(-1px);box-shadow:0 6px 18px rgba(30,58,95,.25)}
+  .btn.brass{background:var(--brass);color:#FFF}
+  .btn.brass:hover{background:#96691F}
+  .btn.ghost{background:transparent;color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--navy)}
+  .btn.ghost:hover{background:var(--navy);color:#F5EFDF}
+  nav .btn{padding:8px 18px;font-size:14px}
+  /* hero */
+  header{padding:84px 0 40px;overflow:hidden}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+  h1{font-size:clamp(34px,4.6vw,52px);font-weight:600}
+  h1 em{font-style:italic;color:var(--brass)}
+  .lede{font-size:19px;margin:20px 0 8px;max-width:34em;color:#3A4149}
+  .sub{font-size:15px;color:var(--muted);margin-bottom:26px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .cta-note{font-size:13.5px;color:var(--muted)}
+  /* document fan */
+  .fan{position:relative;height:520px}
+  .fan a{position:absolute;display:block;border-radius:3px;overflow:hidden;
+         box-shadow:0 12px 34px rgba(35,28,12,.28), 0 2px 8px rgba(35,28,12,.18);
+         transition:transform .25s ease, box-shadow .25s ease}
+  .fan a:hover{transform:translateY(-10px) rotate(0deg) scale(1.02);box-shadow:0 26px 54px rgba(35,28,12,.36);z-index:9}
+  .fan img{display:block;width:100%;height:auto}
+  .fan .f1{width:46%;left:0;top:36px;transform:rotate(-4deg);z-index:3}
+  .fan .f2{width:46%;left:28%;top:0;transform:rotate(1.5deg);z-index:2}
+  .fan .f3{width:46%;left:54%;top:52px;transform:rotate(5deg);z-index:1}
+  .fan figcaption{position:absolute;bottom:-6px;left:0;right:0;text-align:center;font-size:13px;color:var(--muted)}
+  /* sections */
+  section{padding:72px 0}
+  .rule-top{border-top:1px solid var(--rule)}
+  h2{font-size:clamp(26px,3.2vw,36px);font-weight:600;margin-bottom:14px}
+  .secintro{max-width:44em;color:#3A4149;margin-bottom:36px;font-size:18px}
+  /* problem strip */
+  .strip{background:var(--navy-deep);color:#D9D2BE;padding:54px 0}
+  .strip .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .strip h2{color:#F5EFDF}
+  .strip p{color:#BFB8A2;font-size:17px}
+  .strip .n{font-family:'Fraunces',serif;font-size:56px;font-weight:600;color:var(--brass-soft);line-height:1}
+  .strip .stat{border-left:2px solid var(--brass);padding-left:18px;margin-top:22px}
+  .strip .stat .l{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#9E967E}
+  /* deliverable grid */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:var(--card);border:1px solid var(--rule);border-top:3px solid var(--brass);
+        padding:24px 22px;transition:transform .2s ease, box-shadow .2s ease}
+  .card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(35,28,12,.12)}
+  .card h3{font-size:19px;margin-bottom:8px}
+  .card p{font-size:15px;color:#4A4F56}
+  .card .no{font-family:'Fraunces',serif;color:var(--brass);font-weight:600;font-size:14px;letter-spacing:.08em}
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;counter-reset:step}
+  .step{position:relative;padding:26px 22px 22px;background:var(--panel)}
+  .step::before{counter-increment:step;content:counter(step,decimal-leading-zero);
+                font-family:'Fraunces',serif;font-size:44px;font-weight:600;color:var(--brass);
+                display:block;line-height:1;margin-bottom:12px}
+  .step h3{font-size:19px;margin-bottom:8px}
+  .step p{font-size:15px;color:#4A4F56}
+  /* sample showcase */
+  .showcase{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:8px}
+  .showcase a{display:block;text-decoration:none;background:var(--card);border:1px solid var(--rule);
+              padding:14px 14px 16px;transition:transform .2s ease, box-shadow .2s ease}
+  .showcase a:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(35,28,12,.16)}
+  .showcase img{width:100%;height:auto;display:block;border:1px solid var(--rule)}
+  .showcase .cap{font-size:14px;margin-top:12px;color:var(--ink)}
+  .showcase .cap b{font-family:'Fraunces',serif;color:var(--navy)}
+  /* standards list */
+  .standards{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;max-width:960px}
+  .standards div{padding:18px 0;border-bottom:1px solid var(--rule)}
+  .standards b{font-family:'Fraunces',serif;color:var(--navy);font-size:17px;display:block;margin-bottom:4px}
+  .standards p{font-size:15px;color:#4A4F56}
+  /* pricing */
+  .prices{display:grid;grid-template-columns:1fr 1fr;gap:26px;max-width:760px}
+  .price{background:var(--card);border:1px solid var(--rule);padding:30px 28px}
+  .price.feat{border:2px solid var(--brass);position:relative}
+  .price.feat::after{content:"Founding — first 10 engagements";position:absolute;top:-12px;left:24px;
+                     background:var(--brass);color:#FFF;font-size:12px;letter-spacing:.1em;
+                     text-transform:uppercase;padding:3px 10px}
+  .price .amt{font-family:'Fraunces',serif;font-size:46px;font-weight:600;color:var(--navy)}
+  .price .amt small{font-size:16px;color:var(--muted);font-weight:400}
+  .price ul{list-style:none;margin-top:14px}
+  .price li{padding:7px 0 7px 26px;position:relative;font-size:15px;border-bottom:1px solid var(--rule)}
+  .price li::before{content:"—";position:absolute;left:0;color:var(--brass);font-weight:600}
+  .guarantee{background:var(--panel);border-left:3px solid var(--navy);padding:18px 22px;margin-top:26px;
+             max-width:760px;font-size:16px}
+  /* FAQ */
+  details{border-bottom:1px solid var(--rule);max-width:820px}
+  summary{cursor:pointer;padding:18px 0;font-family:'Fraunces',serif;font-weight:600;font-size:18px;
+          color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--brass);font-size:24px;transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{padding:0 0 18px;color:#4A4F56;font-size:16px;max-width:46em}
+  /* intake */
+  .intake{background:var(--navy-deep);color:#D9D2BE}
+  .intake h2{color:#F5EFDF}
+  .intake .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+  .intake p{color:#BFB8A2;font-size:16px}
+  form{display:grid;gap:14px}
+  label{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#9E967E}
+  input,select,textarea{width:100%;background:#20334A;border:1px solid #3A5070;color:#F0EADA;
+        padding:12px 14px;font-family:'Source Serif 4',serif;font-size:16px;border-radius:2px}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--brass);border-color:var(--brass)}
+  /* footer */
+  footer{padding:40px 0 60px;font-size:14px;color:var(--muted)}
+  footer .wrap{display:grid;grid-template-columns:2fr 1fr;gap:40px}
+  .disclosure{background:var(--card);border:1px solid var(--rule);padding:18px 22px;font-size:14px;
+              color:#4A4F56;max-width:820px;margin:26px auto 0}
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion: reduce){.reveal{opacity:1;transform:none;transition:none}}
+  @media (max-width:860px){
+    .hero,.strip .wrap,.intake .wrap,footer .wrap{grid-template-columns:1fr}
+    .grid,.steps,.showcase{grid-template-columns:1fr}
+    .prices,.standards{grid-template-columns:1fr}
+    .fan{height:auto;min-height:0;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+    .fan a{position:static;transform:none!important;width:100%}
+    .fan figcaption{position:static;margin-top:8px}
+    nav .links a:not(.btn){display:none}
+    header{padding:44px 0 20px}
+    section{padding:52px 0}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="wordmark" href="#">Deal<span>Draft</span></a>
+    <div class="links">
+      <a href="sample-cim.html">The sample CIM</a>
+      <a href="#whats-in-it">What you get</a>
+      <a href="#pricing">Pricing</a>
+      <a class="btn brass" href="#start">Start a CIM</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap hero">
+    <div>
+      <div class="kicker">White-label CIM drafting for business brokers</div>
+      <h1 style="margin-top:14px">The CIM is the best <em>20 hours</em> of work you never wanted to do again.</h1>
+      <p class="lede">Send your recast financials and a seller questionnaire. Seventy-two hours later:
+      a 20–30 page buyer-grade Confidential Information Memorandum under <strong>your brand</strong> —
+      financial narrative from your numbers, genuinely cited industry research, blind teaser, and
+      marketplace copy. Editable Word + presentation PDF.</p>
+      <p class="sub">Never a valuation. Never your client's data anywhere public. Pay only if you use it.</p>
+      <div class="cta-row">
+        <a class="btn" href="sample-cim.html">Read the 26-page sample</a>
+        <a class="btn ghost" href="#pricing">$500 founding price</a>
+      </div>
+      <p class="cta-note" style="margin-top:14px">The sample is a complete CIM for a fictional HVAC company —
+      judge the quality bar before you send a stranger anything.</p>
+    </div>
+    <figure class="fan" aria-label="Pages from the sample CIM">
+      <a class="f1" href="sample-cim.html"><img src="assets/page-pnl.jpg" alt="Sample CIM financial overview page with recast P&L table" loading="eager"></a>
+      <a class="f2" href="sample-cim.html"><img src="assets/page-cover.jpg" alt="Sample CIM cover — Yahara Comfort Systems, LLC (fictional)" loading="eager"></a>
+      <a class="f3" href="sample-cim.html"><img src="assets/page-chart.jpg" alt="Sample CIM revenue and SDE chart page" loading="eager"></a>
+      <figcaption>Real pages from the sample deliverable — click any page to read all 26.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Your commission doesn't pay you by the hour. The CIM bills you by the weekend.</h2>
+      <p style="margin-top:14px">Every listing needs one. Writing it well takes 20–40 hours you could spend
+      listing, negotiating, or closing — and outsourced CIM writers charge $1,500–$5,000 with multi-week
+      turnarounds. So it gets written at 11pm, from the last deal's template, and it reads that way to buyers.</p>
+    </div>
+    <div class="reveal">
+      <div class="stat"><div class="n">20–40 hrs</div><div class="l">of broker time per CIM, done in-house</div></div>
+      <div class="stat"><div class="n">72 hrs</div><div class="l">DealDraft turnaround, intake to delivery</div></div>
+      <div class="stat"><div class="n">$0</div><div class="l">if you don't use what we deliver</div></div>
+    </div>
+  </div>
+</div>
+
+<section id="whats-in-it">
+  <div class="wrap">
+    <div class="kicker">The deliverable</div>
+    <h2>One intake, five assets, your brand on all of them</h2>
+    <p class="secintro">Everything a listing needs to go to market, drafted from your recast numbers and
+    your seller's questionnaire — nothing invented, every gap flagged back to you instead of papered over.</p>
+    <div class="grid">
+      <div class="card reveal"><div class="no">01</div><h3>The CIM — 20–30 pages</h3><p>Executive summary,
+        investment highlights, operations, organization, customers, market — structured the way buyers and
+        SBA lenders actually read, ending in a financial section that foots to the dollar.</p></div>
+      <div class="card reveal"><div class="no">02</div><h3>Financial narrative, not financial fiction</h3><p>We
+        narrate <em>your</em> recast — revenue bridge, margin story, add-back schedule presented line-by-line
+        with rationale. We never alter a number and never opine on price. Pricing stays yours.</p></div>
+      <div class="card reveal"><div class="no">03</div><h3>Cited industry section</h3><p>Real market research
+        with checkable sources — government data, industry associations, named research firms — each fact
+        connected back to the subject business. No boilerplate that never mentions the company again.</p></div>
+      <div class="card reveal"><div class="no">04</div><h3>Blind teaser one-pager</h3><p>Anonymized to survive
+        the competitor test ("could their rival name them from this?"), branded to your firm, built to make
+        qualified buyers sign your NDA.</p></div>
+      <div class="card reveal"><div class="no">05</div><h3>Marketplace listing copy</h3><p>BizBuySell/Axial-ready
+        headline and body, consistent to the digit with the CIM and teaser, because all three come from the
+        same source data in the same sitting.</p></div>
+      <div class="card reveal"><div class="no">06</div><h3>Editable everything</h3><p>Presentation PDF plus a
+        Word copy you can edit freely. It's your document, under your brand — we're the drafting room,
+        not the byline.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rule-top" id="how">
+  <div class="wrap">
+    <div class="kicker">The process</div>
+    <h2>Three steps, none of them a meeting</h2>
+    <div class="steps" style="margin-top:30px">
+      <div class="step reveal"><h3>Send the inputs</h3><p>Your recast P&amp;L and add-back schedule, plus our
+        async seller questionnaire (45–60 min for your seller) or your own equivalent. NDA first if you
+        prefer — ours or yours.</p></div>
+      <div class="step reveal"><h3>72 hours later, the draft</h3><p>Full package under your brand. Anything we
+        couldn't source from your inputs arrives flagged <em>[BROKER: confirm]</em> — visibly, in the
+        delivery note — never silently invented.</p></div>
+      <div class="step reveal"><h3>You review. You decide.</h3><p>Mark it up and we revise, or edit the Word
+        copy yourself. Pay the founding price only if you use it. If it doesn't clear your bar, you owe
+        nothing and keep nothing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rule-top" id="sample">
+  <div class="wrap">
+    <div class="kicker">Proof, not promises</div>
+    <h2>Read the sample the way a buyer would</h2>
+    <p class="secintro">We built a complete engagement for a fictional company — Yahara Comfort Systems, a
+    $4.1M Wisconsin HVAC contractor — so you can judge structure, tone, and rigor on the exact document
+    type you'd receive. The financials are internally consistent to the dollar; the industry section cites
+    18 real sources; the add-backs are presented the way an SBA underwriter wants them.</p>
+    <div class="showcase">
+      <a class="reveal" href="sample-cim.html">
+        <img src="assets/page-highlights.jpg" alt="Investment highlights page of the sample CIM" loading="lazy">
+        <div class="cap"><b>The full CIM</b> — 26 pages, HTML &amp; PDF, every section built out.</div>
+      </a>
+      <a class="reveal" href="sample-cim.pdf">
+        <img src="assets/page-mix.jpg" alt="Revenue mix page with chart and table from the sample CIM" loading="lazy">
+        <div class="cap"><b>The presentation PDF</b> — what your buyer receives after the NDA.</div>
+      </a>
+      <a class="reveal" href="sample-teaser.html">
+        <img src="assets/page-teaser.jpg" alt="One-page blind teaser sample" loading="lazy">
+        <div class="cap"><b>The blind teaser</b> — one page, anonymized, ships with every engagement.</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="rule-top" id="standards">
+  <div class="wrap">
+    <div class="kicker">The standard we draft to</div>
+    <h2>Rules a skeptical broker should demand anyway</h2>
+    <div class="standards" style="margin-top:26px">
+      <div class="reveal"><b>Your numbers, untouched</b><p>We narrate the recast you provide. We never
+        construct add-backs, adjust figures, or bury a column that doesn't foot — mismatches go back to you,
+        flagged.</p></div>
+      <div class="reveal"><b>No valuations, ever</b><p>No multiples, no "businesses like this sell for…" —
+        your asking price appears only if you supply it, stated once, flat. Valuation is your profession,
+        not our product.</p></div>
+      <div class="reveal"><b>Confidential by structure</b><p>Client financials live only inside the engagement
+        and are deleted on request. Never in marketing, never in samples, never in any public corner of the
+        internet. NDA-first available.</p></div>
+      <div class="reveal"><b>Every claim traceable</b><p>Facts come from your inputs or cited public sources.
+        Anything else ships flagged <em>[BROKER: confirm]</em>. A CIM that oversells costs you the buyer's
+        trust in diligence — so ours don't.</p></div>
+      <div class="reveal"><b>Seller-friendly capture</b><p>An async questionnaire your seller completes in
+        under an hour — no calls to schedule, structured so every answer lands in a specific section.</p></div>
+      <div class="reveal"><b>Your brand only</b><p>The deliverable carries your firm's name, cover to footer.
+        White-label means your buyers never hear ours.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rule-top" id="pricing">
+  <div class="wrap">
+    <div class="kicker">Pricing</div>
+    <h2>Priced like a no-brainer against a $30,000 commission</h2>
+    <div class="prices" style="margin-top:34px">
+      <div class="price feat reveal">
+        <div class="amt">$500 <small>/ listing package</small></div>
+        <ul>
+          <li>Full CIM + blind teaser + listing copy</li>
+          <li>72-hour turnaround from complete intake</li>
+          <li>One revision round included</li>
+          <li>PDF + editable Word</li>
+          <li><strong>Pay only if you use it</strong></li>
+        </ul>
+      </div>
+      <div class="price reveal">
+        <div class="amt">$750 <small>/ standard</small></div>
+        <ul>
+          <li>Same package, after founding slots fill</li>
+          <li>Rush (48h): +50%</li>
+          <li>No retainers, no minimums</li>
+          <li>Volume pricing at 3+/quarter — ask</li>
+        </ul>
+      </div>
+    </div>
+    <div class="guarantee reveal"><strong>The only honest guarantee in this business:</strong> if the draft
+    doesn't clear your professional bar, don't use it and don't pay. You're the QA — you write these for a
+    living, and that's exactly why this offer is safe for us to make.</div>
+  </div>
+</section>
+
+<section class="rule-top" id="faq">
+  <div class="wrap">
+    <div class="kicker">Questions brokers ask</div>
+    <h2 style="margin-bottom:26px">Fair questions, straight answers</h2>
+    <details open>
+      <summary>Who actually writes it?</summary>
+      <p>Frontier AI does the drafting — that's why 72 hours and $500 are possible — governed by a written
+      production methodology (section rubrics, financial-narrative rules, sourcing standards, a banned-claims
+      list), with every deliverable reviewed by a human principal before it reaches you. Then you review it,
+      which is the real gate: nothing goes to a buyer without a professional broker's sign-off — yours.</p>
+    </details>
+    <details>
+      <summary>My client's financials are sensitive. Where do they go?</summary>
+      <p>Into the drafting engagement and nowhere else: processed under commercial AI terms that don't train
+      on your data, never placed in any public asset, deleted on request. We'll sign your NDA before you send
+      a page, or use our mutual template. The fictional sample exists precisely so no client data ever needs
+      to appear in marketing.</p>
+    </details>
+    <details>
+      <summary>Will it read like AI wrote it?</summary>
+      <p>Read the sample and decide — that's what it's for. The methodology bans the tells (hype adjectives,
+      hedge-everything mush, boilerplate market sections) and enforces the things buyers actually check:
+      numbers that foot, claims that trace, headwinds stated honestly with their mitigations.</p>
+    </details>
+    <details>
+      <summary>Do you do valuations or broker opinions of value?</summary>
+      <p>No, categorically. We present your recast and your asking price as supplied. That line protects you
+      (it's your license and your pricing craft) and us (we're a drafting service, not an appraiser).</p>
+    </details>
+    <details>
+      <summary>What do you need from me, exactly?</summary>
+      <p>Three things: your recast/normalized P&amp;L (3 years), your add-back schedule, and the completed
+      seller questionnaire — ours or your own form. Photos and brand kit if you want them used. The 72-hour
+      clock starts when intake is complete.</p>
+    </details>
+    <details>
+      <summary>What if my listing is in an industry you haven't written?</summary>
+      <p>The methodology is industry-agnostic; the research standard isn't thinner for unusual industries —
+      it just cites different sources. If we genuinely can't hit the quality bar for a niche, we'll say so
+      before you send anything, not after.</p>
+    </details>
+  </div>
+</section>
+
+<section class="intake" id="start">
+  <div class="wrap">
+    <div>
+      <div class="kicker" style="color:var(--brass-soft)">Start a CIM</div>
+      <h2>Have a listing? Send the industry, we'll confirm turnaround.</h2>
+      <p style="margin-top:14px">No commitment in asking. Tell us the industry and rough size band, and
+      you'll get a yes/no on the 72-hour clock plus the intake list — usually same day. NDA first if you
+      prefer.</p>
+      <p style="margin-top:12px">Prefer email? <a href="mailto:ssnmhn@gmail.com?subject=DealDraft%20—%20CIM%20inquiry" style="color:#C79A55">ssnmhn@gmail.com</a></p>
+    </div>
+    <form action="https://formsubmit.co/ssnmhn@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="DealDraft intake inquiry">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://ssnmhn.github.io/dealdraft/thanks.html">
+      <div><label for="name">Your name</label><input id="name" name="name" required autocomplete="name"></div>
+      <div><label for="firm">Brokerage / firm</label><input id="firm" name="firm" autocomplete="organization"></div>
+      <div><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email"></div>
+      <div><label for="industry">Listing industry &amp; state (e.g., "HVAC, WI")</label><input id="industry" name="industry"></div>
+      <div><label for="msg">Anything else</label><textarea id="msg" name="message" rows="3"></textarea></div>
+      <button class="btn brass" type="submit" style="justify-self:start">Send inquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="wordmark" href="#">Deal<span>Draft</span></a>
+      <p style="margin-top:10px;max-width:40em">White-label Confidential Information Memorandum drafting for
+      business brokers and M&amp;A advisors. Operated by Mike Batell, Wisconsin.</p>
+      <p style="margin-top:8px">DealDraft is a document-drafting service. It does not provide valuations,
+      appraisals, legal, tax, or investment advice, and is not a business broker.</p>
+    </div>
+    <div>
+      <p><a href="sample-cim.html">Sample CIM (26 pages)</a></p>
+      <p><a href="sample-teaser.html">Sample blind teaser</a></p>
+      <p><a href="sample-cim.pdf">Sample as PDF</a></p>
+      <p><a href="mailto:ssnmhn@gmail.com">ssnmhn@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="disclosure"><strong>How this service is built, plainly:</strong> drafting is done by frontier
+    AI under a written methodology; a human principal reviews every deliverable; your professional review is
+    the final gate before anything reaches a buyer. Client data is never used for marketing or model
+    training and is deleted on request. The sample company is fictional; its industry research is real
+    and cited.</div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+  }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
